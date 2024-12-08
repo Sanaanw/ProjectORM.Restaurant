@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Restaurant\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Restaurant - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{683722D1-0092-4190-B97F-5B8DE502CF68}|Restaurant.Core\\Restaurant.Core.csproj|c:\\users\\asus\\onedrive\\desktop\\restaurant - copy\\restaurant.core\\entities\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{683722D1-0092-4190-B97F-5B8DE502CF68}|Restaurant.Core\\Restaurant.Core.csproj|solutionrelative:restaurant.core\\entities\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Restaurant - Copy\\Restaurant.Core\\Entities\\MenuItem.cs",
+              "RelativeDocumentMoniker": "Restaurant.Core\\Entities\\MenuItem.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Restaurant - Copy\\Restaurant.Core\\Entities\\MenuItem.cs",
+              "RelativeToolTip": "Restaurant.Core\\Entities\\MenuItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:42:18.89Z",
+              "EditorCaption": ""
             }
           ]
         }

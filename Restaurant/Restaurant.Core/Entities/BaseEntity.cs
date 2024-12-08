@@ -10,8 +10,6 @@ namespace Restaurant.Core.Entities
 {
     public class BaseEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
+        public int Id { get; set; }
     }
 }

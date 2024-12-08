@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Restaurant.Core.Entities;
+using Restaurant.DataAccess.Configurations;
 using System.Text.RegularExpressions;
 
 namespace Restaurant.DataAccess.Data
@@ -11,7 +12,11 @@ namespace Restaurant.DataAccess.Data
         public DbSet<OrderItem> orderItems { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server =.; Database = PB502AcademyDB; User Id = sa; Password = Senan123@; TrustServerCertificate = true;");
+            optionsBuilder.UseSqlServer("Server =.; Database = Restaurant; User Id = sa; Password = Senan123@; TrustServerCertificate = true;");
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(MenuItemConfiguration).Assembly);
         }
     }
 }
