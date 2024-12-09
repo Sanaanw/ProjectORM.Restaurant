@@ -8,8 +8,6 @@ namespace Restaurant.App
         static void Main(string[] args)
         {
             MenuItemController MenuItemController = new();
-            MenuItemController.AddMenuItem(new() { Name = "Pies", Price = 12, Category = "Desserts" });
-            MenuItemController.AddMenuItem(new() { Name = "Piesss", Price = 12, Category = "Desserts" });
         }
     }
 }

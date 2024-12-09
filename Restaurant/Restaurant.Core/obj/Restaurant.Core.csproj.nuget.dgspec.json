@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj": {}
+    "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj",
         "projectName": "Restaurant.Core",
-        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Restaurant.Core.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Core\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

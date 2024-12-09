@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Entities
 {
-    public class Order:BaseEntity
+    public class Order : BaseEntity
     {
         public double TotalAmount { get; set; }
         public DateTime Date { get; set; }
