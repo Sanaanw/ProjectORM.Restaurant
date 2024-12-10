@@ -1,4 +1,5 @@
-﻿using Restaurant.DataAccess.Data;
+﻿using Restaurant.Core.Entities;
+using Restaurant.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +8,16 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Service.Services
 {
-    public class OrderItem
+    public class OrderItemService
     {
         private readonly RestaurantContext _orderItemcontext;
-        public OrderItem()
+        public OrderItemService()
         {
             _orderItemcontext = new RestaurantContext();
         }
-        
+        public void AddOrderItem(OrderItem orderItem)
+        {
+          
+        }
     }
 }

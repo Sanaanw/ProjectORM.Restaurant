@@ -14,7 +14,7 @@ namespace Restaurant.DataAccess.Configurations
         public void Configure(EntityTypeBuilder<Order> builder)
         {
             builder.HasKey(a => a.Id);
-            builder.Property(a => a.Id);
+            builder.Property(a=>a.TotalAmount).HasDefaultValue(null).IsRequired(false);
             builder.Property(a=>a.Date).HasDefaultValue(DateTime.Now);
         }
     }

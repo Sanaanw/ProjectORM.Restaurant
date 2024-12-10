@@ -34,5 +34,18 @@ namespace Restaurant.App.Controllers
             _menuItemService.EditMenuItem(_id, _menuItem);
             Console.WriteLine($"Edited MenuItem with {_id} ID");
         }
+        public List<MenuItem> MenuItemsByCategory(string _category)
+        {
+            return _menuItemService.GetItemByCategory(_category);
+        }
+        public List<MenuItem> MenuItemsByPriceInterval(int _minPrice,int _maxPrice)
+        {
+            return _menuItemService.GetItemByPriceInterval(_minPrice, _maxPrice);
+        }
+        public List<MenuItem> SearchMenuItems(string _name)
+        {
+            return _menuItemService.GetWithSearch(_name);
+        }
+
     }
 }
