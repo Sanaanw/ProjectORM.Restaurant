@@ -30,7 +30,7 @@ namespace Restaurant.Service.Services
             var ExitsMenuItem = _Menucontext.menuItems.SingleOrDefault(x => x.Id == _id);
             if (ExitsMenuItem is null)
                 throw new NotFoundException($"Do not found item with {_id}-ID");
-            else return ExitsMenuItem;
+            return ExitsMenuItem;
         }
         public MenuItem GetItemByName(string name)
         {

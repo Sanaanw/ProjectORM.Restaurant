@@ -14,7 +14,7 @@ namespace Restaurant.DataAccess.Configurations
         public void Configure(EntityTypeBuilder<MenuItem> builder)
         {
             builder.HasKey(m => m.Id);
-            builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
+            builder.Property(x => x.Name).IsRequired(true).HasMaxLength(100);
         }
     }
 }
