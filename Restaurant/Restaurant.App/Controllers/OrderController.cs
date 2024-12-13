@@ -15,6 +15,10 @@ namespace Restaurant.App.Controllers
         {
             _orderService = new OrderService();
         }
+        public List<Order> Orders()
+        {
+            return _orderService.GetAllOrders();
+        }
         public void CreateOrder(Order order)
         {
             _orderService.CreateOrder(order);

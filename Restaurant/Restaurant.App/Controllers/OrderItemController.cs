@@ -19,5 +19,9 @@ namespace Restaurant.App.Controllers
         {
             _orderItemService.AddOrderItem(_orderItem);
         }
+        public void RemoveOrderItem(int _id)
+        {
+            _orderItemService.DeleteOrderItem(_id);
+        }
     }
 }

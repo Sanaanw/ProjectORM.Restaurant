@@ -25,8 +25,16 @@ namespace Restaurant.Service.Services
             if (_order.TotalAmount is null)
                 _order.TotalAmount = 0;
             _order.TotalAmount += _itemPrice * orderItem.Count;
-
+            _orderService.UpdateOrder(orderItem.OrderID, new() { TotalAmount = _order.TotalAmount });
             _orderItemcontext.orderItems.Add(orderItem);
+            _orderItemcontext.SaveChanges();
+        }
+        public void DeleteOrderItem(int orderID)
+        {
+            var NewOrderItem = _orderItemcontext.orderItems.SingleOrDefault(x => x.Id == orderID);
+            if (NewOrderItem is null)
+                throw new NotFoundException($"Not found OrderItem with {orderID} ID");
+            _orderItemcontext.orderItems.Remove(NewOrderItem);
             _orderItemcontext.SaveChanges();
         }
     }

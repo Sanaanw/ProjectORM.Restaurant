@@ -11,6 +11,15 @@ namespace Restaurant.Service.Services
         {
             _Ordercontext = new RestaurantContext();
         }
+        public void UpdateOrder(int id, Order order)
+        {
+            var ExistOrder = GetOrderWithNo(id);
+            if (ExistOrder.TotalAmount is null)
+                ExistOrder.TotalAmount = 0;
+            ExistOrder.TotalAmount = order.TotalAmount ?? order.TotalAmount;
+            ExistOrder.Date = ExistOrder.Date ?? ExistOrder.Date;
+            _Ordercontext.SaveChanges();
+        }
         public void CreateOrder(Order order)
         {
             if (_Ordercontext.orders.Any(x => x.Id == order.Id))
@@ -51,6 +60,10 @@ namespace Restaurant.Service.Services
             if (Order is null)
                 throw new NotFoundException("Not found Order in this No");
             return Order;
+        }
+        public List<Order> GetAllOrders()
+        {
+            return _Ordercontext.orders.ToList();
         }
     }
 }
