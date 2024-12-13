@@ -13,7 +13,7 @@ namespace Restaurant.Core.Entities
         public string Category { get; set; }
         public override string ToString()
         {
-            return $"Name:{Name}, Price:{Price}, Category:{Category}";
+            return $"ID:{Id}, Name:{Name}, Price:{Price}, Category:{Category}";
         }
     }
 }

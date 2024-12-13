@@ -20,19 +20,19 @@ namespace Restaurant.App.Controllers
             _menuItemService.CreateMenuItem(_menuItem);
             Console.WriteLine($"{_menuItem} added to Menu");
         }
-        public List<MenuItem> MenuItems()
+        public void EditMenuItem(int _id, MenuItem _menuItem)
         {
-            return _menuItemService.GetAllItems();
+            _menuItemService.EditMenuItem(_id, _menuItem);
+            Console.WriteLine($"Edited MenuItem with {_id} ID");
         }
         public void RemoveMenuItem(int _id)
         {
             _menuItemService.DeleteById(_id);
             Console.WriteLine($"Removed item with {_id} ID");
         }
-        public void EditMenuItem(int _id,MenuItem _menuItem)
+        public List<MenuItem> MenuItems()
         {
-            _menuItemService.EditMenuItem(_id, _menuItem);
-            Console.WriteLine($"Edited MenuItem with {_id} ID");
+            return _menuItemService.GetAllItems();
         }
         public List<MenuItem> MenuItemsByCategory(string _category)
         {

@@ -7,12 +7,28 @@
       "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\managerestoran\\manageorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\project(orm)\\restaurant\\restaurant.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\project(orm)\\restaurant\\restaurant.app\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\project(orm)\\restaurant\\restaurant.app\\managerestoran\\managemenuitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\managerestoran\\managemenuitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{683722D1-0092-4190-B97F-5B8DE502CF68}|Restaurant.Core\\Restaurant.Core.csproj|c:\\users\\asus\\onedrive\\desktop\\project(orm)\\restaurant\\restaurant.core\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{683722D1-0092-4190-B97F-5B8DE502CF68}|Restaurant.Core\\Restaurant.Core.csproj|solutionrelative:restaurant.core\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{683722D1-0092-4190-B97F-5B8DE502CF68}|Restaurant.Core\\Restaurant.Core.csproj|c:\\users\\asus\\onedrive\\desktop\\project(orm)\\restaurant\\restaurant.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{683722D1-0092-4190-B97F-5B8DE502CF68}|Restaurant.Core\\Restaurant.Core.csproj|solutionrelative:restaurant.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\project(orm)\\restaurant\\restaurant.app\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\project(orm)\\restaurant\\restaurant.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,23 +38,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Restaurant.Core\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "Restaurant.Core\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:21:31.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Restaurant.Core\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.Core\\Entities\\Order.cs",
+              "RelativeToolTip": "Restaurant.Core\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:21:28.368Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ManageOrders.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "RelativeDocumentMoniker": "Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "RelativeToolTip": "Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB4AAAAjAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Restaurant.App\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Restaurant.App\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:45:26.668Z",
+              "WhenOpened": "2024-12-13T16:21:24.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderItemController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\Controllers\\OrderItemController.cs",
+              "RelativeDocumentMoniker": "Restaurant.App\\Controllers\\OrderItemController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\Controllers\\OrderItemController.cs",
+              "RelativeToolTip": "Restaurant.App\\Controllers\\OrderItemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:21:22.889Z",
               "EditorCaption": ""
             },
             {
@@ -49,20 +104,33 @@
               "RelativeDocumentMoniker": "Restaurant.App\\ManageRestoran\\ManageMenuItems.cs",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageMenuItems.cs",
               "RelativeToolTip": "Restaurant.App\\ManageRestoran\\ManageMenuItems.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwC0AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:16:22.178Z",
+              "WhenOpened": "2024-12-13T16:22:16.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ManageOrders.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageOrders.cs",
+              "RelativeDocumentMoniker": "Restaurant.App\\ManageRestoran\\ManageOrders.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageOrders.cs",
+              "RelativeToolTip": "Restaurant.App\\ManageRestoran\\ManageOrders.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:21:52.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\Program.cs",
               "RelativeDocumentMoniker": "Restaurant.App\\Program.cs",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\Project(ORM)\\Restaurant\\Restaurant.App\\Program.cs",
               "RelativeToolTip": "Restaurant.App\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCEAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T18:45:42.995Z",
               "EditorCaption": ""

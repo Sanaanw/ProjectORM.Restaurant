@@ -46,25 +46,23 @@ namespace Restaurant.Service.Services
             if (string.IsNullOrWhiteSpace(category))
                 throw new ArgumentNullException("Category is Null");
             var ExitsMenuItems = _Menucontext.menuItems.Where(x => x.Category == category).ToList();
-            if (ExitsMenuItems is null)
+            if (!ExitsMenuItems.Any())
                 throw new NotFoundException($"Do not found item with {category} Category");
             else return ExitsMenuItems;
         }
-        public List<MenuItem> GetItemByPriceInterval(int? minPrice, int? maxPrice)
+        public List<MenuItem> GetItemByPriceInterval(int minPrice, int maxPrice)
         {
-            if (minPrice is null || maxPrice is null)
-                throw new ArgumentNullException("PriceInterval is Null");
-            var ExitsMenuItems = _Menucontext.menuItems.Where(x => x.Price > minPrice && x.Price < maxPrice).ToList();
-            if (ExitsMenuItems is null)
-                throw new NotFoundException($"Do not found item in interval");
-            else return ExitsMenuItems;
+            List<MenuItem> ExitsMenuItems = _Menucontext.menuItems.Where(x => x.Price > minPrice && x.Price < maxPrice).ToList();
+            if (!ExitsMenuItems.Any())
+                throw new NotFoundException("Do not found");
+            return ExitsMenuItems;
         }
         public List<MenuItem> GetWithSearch(string itemName)
         {
             if (string.IsNullOrWhiteSpace(itemName))
                 throw new ArgumentNullException("Name is Null");
             var ExitsMenuItems = _Menucontext.menuItems.Where(x => x.Name.Contains(itemName)).ToList();
-            if (ExitsMenuItems is null)
+            if (!ExitsMenuItems.Any())
                 throw new NotFoundException($"Do not found");
             else return ExitsMenuItems;
         }

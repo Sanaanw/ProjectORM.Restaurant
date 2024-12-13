@@ -18,6 +18,7 @@ namespace Restaurant.App.Controllers
        public void AddOrderItem(OrderItem _orderItem)
         {
             _orderItemService.AddOrderItem(_orderItem);
+            Console.WriteLine($"Order item added");
         }
         public void RemoveOrderItem(int _id)
         {
