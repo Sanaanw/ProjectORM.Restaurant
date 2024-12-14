@@ -1,4 +1,5 @@
-﻿using Restaurant.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Restaurant.Core.Entities;
 using Restaurant.DataAccess.Data;
 using Restaurant.Service.Exceptions;
 
@@ -6,22 +7,22 @@ namespace Restaurant.Service.Services
 {
     public class OrderItemService
     {
-        private readonly RestaurantContext _orderItemcontext;
-        private readonly OrderService _orderService;
         private readonly MenuItemService _menuItemService;
+        private readonly OrderService _orderService;
+        private readonly RestaurantContext _orderItemcontext;
         public OrderItemService()
         {
             _orderService = new OrderService();
-            _orderItemcontext = new RestaurantContext();
             _menuItemService = new MenuItemService();
+            _orderItemcontext = new RestaurantContext();
         }
         public void AddOrderItem(OrderItem orderItem)
         {
             if (!_orderItemcontext.orders.Any(x => x.Id == orderItem.OrderID))
-                throw new NotFoundException($"The order that wiht {orderItem.OrderID} ID doesn't exist");
+                throw new NotFoundException($"The order that with {orderItem.OrderID} ID doesn't exist");
             MenuItem _menuItem = _menuItemService.GetById(orderItem.MenuItemID);
             double _itemPrice = (double)_menuItem.Price;
-            Order _order = _orderService.GetOrderWithNo(orderItem.OrderID);
+            Order _order = _orderService.GetOrderWithNoForOrderItem(orderItem.OrderID);
             if (_order.TotalAmount is null)
                 _order.TotalAmount = 0;
             _order.TotalAmount += _itemPrice * orderItem.Count;

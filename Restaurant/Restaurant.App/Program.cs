@@ -10,12 +10,13 @@ namespace Restaurant.App
     {
         static void Main(string[] args)
         {
+
             MenuItemController menuItemController = new();
             OrderItemController orderItemController = new();
             OrderController orderController = new();
             ManageMenuItems manageMenuItems = new();
             ManageOrders manageOrders = new();
-            bool result = true;
+            bool result = true; 
             do
             {
                 Console.Clear();

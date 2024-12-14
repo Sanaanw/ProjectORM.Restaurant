@@ -66,10 +66,10 @@ namespace Restaurant.Service.Services
                 throw new NotFoundException($"Do not found");
             else return ExitsMenuItems;
         }
-        public void EditMenuItem(int? id, MenuItem _menuItem)
+        public void EditMenuItem(int id, MenuItem _menuItem)
         {
             var ExistMenuItem = GetById(id);
-            if (_Menucontext.menuItems.Any(g => g.Name == ExistMenuItem.Name && g.Id != id))
+            if (_Menucontext.menuItems.Any(g => g.Name == _menuItem.Name && g.Id != id))
                 throw new AlreadyExistsException("Argument is already exist");
             ExistMenuItem.Name = _menuItem.Name ?? ExistMenuItem.Name;
             ExistMenuItem.Price = _menuItem.Price ?? ExistMenuItem.Price;

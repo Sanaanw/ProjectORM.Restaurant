@@ -15,29 +15,30 @@ namespace Restaurant.App.Controllers
         {
             _orderService = new OrderService();
         }
-        public List<Order> Orders()
+        public void ShowAllOrders()
         {
-            return _orderService.GetAllOrders();
+            _orderService.GetAllOrders();
         }
+
         public void CreateOrder(Order order)
         {
             _orderService.CreateOrder(order);
         }
-        public List<Order> GetOrderByDatesInterval(DateTime _startDate, DateTime _endDate)
+        public void GetOrderByDateInterval(DateTime _startDate, DateTime _endDate)
         {
-            return _orderService.GetOrderWithDateInterval(_startDate, _endDate);
+            _orderService.GetOrderWithDateInterval(_startDate, _endDate);
         }
-        public List<Order> GetOrderByDate(DateTime _date)
+        public void ShowOrdersForGivenDate(DateTime _date)
         {
-            return _orderService.GetOrderWithDate(_date);
+            _orderService.GetOrderWithDate(_date);
         }
-        public List<Order> GetOrderByPriceInterval(double? _minPrice, double? _maxPrice)
+        public void ShowOrderByAmountRange(double _minPrice, double _maxPrice)
         {
-            return _orderService.GetOrderWithPriceInterval(_minPrice,_maxPrice);
+             _orderService.GetOrderWithPriceInterval(_minPrice,_maxPrice);
         }
-        public Order GetOrderByNo(int _id)
+        public void GetOrderByNo(int _id)
         {
-            return _orderService.GetOrderWithNo(_id);
+          _orderService.GetOrderWithNo(_id);
         }
     }
 }

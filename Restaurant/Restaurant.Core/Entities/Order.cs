@@ -4,6 +4,10 @@
     {
         public double? TotalAmount { get; set; }
         public DateTime? Date { get; set; }
-        List<OrderItem> orderItems;
+        public List<OrderItem> orderItems { get; set; }
+        public override string ToString()
+        {
+            return $"ID:{Id}, TotalAmount:{TotalAmount}, Date:{Date}, ";
+        }
     }
 }
