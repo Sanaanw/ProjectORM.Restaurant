@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Restaurant.Core.Entities;
 using Restaurant.DataAccess.Configurations;
-using System.Text.RegularExpressions;
 
 namespace Restaurant.DataAccess.Data
 {

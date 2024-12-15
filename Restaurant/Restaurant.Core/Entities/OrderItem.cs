@@ -7,5 +7,9 @@
         public MenuItem menuItem { get; set; }  
         public int OrderID { get; set; }
         public Order order { get; set; }
+        public override string ToString()
+        {
+            return $"ID:{Id}, MenuItemID:{MenuItemID}, OrderID: {OrderID}";
+        }
     }   
 }

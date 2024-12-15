@@ -1,11 +1,5 @@
 ﻿using Restaurant.App.Controllers;
 using Restaurant.Service.Exceptions;
-using Restaurant.Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Restaurant.App.ManageRestoran
 {
@@ -36,20 +30,8 @@ namespace Restaurant.App.ManageRestoran
                 {
                     case 1:
                         Console.Clear();
-                        Console.Write("Add ID of Menu item that you wanna add: ");
-                        var inputMenuItemId1 = Console.ReadLine();
-                        if (!int.TryParse(inputMenuItemId1, out int MenuItemId1))
-                            throw new NotAppropriateValueException("Pls add ID");
-                        Console.Write($"Add count of Menu item: ");
-                        var inputCountItem1 = Console.ReadLine();
-                        if (!int.TryParse(inputCountItem1, out int CountItem1))
-                            throw new NotAppropriateValueException("Pls add count");
-                        Console.Write("Add Order ID that Order item is belong to: ");
-                        var inputOrderId1 = Console.ReadLine();
-                        if (!int.TryParse(inputOrderId1, out int OrderId1))
-                            throw new NotAppropriateValueException("Pls add ID");
-                        orderItemController.AddOrderItem(new() { MenuItemID = MenuItemId1, Count = CountItem1, OrderID = OrderId1 });
-                        Thread.Sleep(2000);
+                        orderController.CreateOrder();
+                        Thread.Sleep(3000);
                         break;
                     case 2:
                         Console.Clear();

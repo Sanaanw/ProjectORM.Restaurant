@@ -1,10 +1,5 @@
 ﻿using Restaurant.Core.Entities;
 using Restaurant.Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Restaurant.App.Controllers
 {
@@ -19,9 +14,9 @@ namespace Restaurant.App.Controllers
         {
             _orderService.GetAllOrders();
         }
-        public void CreateOrder(Order order)
+        public void CreateOrder()
         {
-            _orderService.CreateOrder(order);
+           _orderService.CreateOrder();
         }
         public void GetOrderByDateInterval(DateTime _startDate, DateTime _endDate)
         {

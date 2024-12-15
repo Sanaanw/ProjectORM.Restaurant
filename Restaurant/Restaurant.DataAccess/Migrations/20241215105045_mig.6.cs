@@ -5,7 +5,7 @@
 namespace Restaurant.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class mig5 : Migration
+    public partial class mig6 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,11 +15,11 @@ namespace Restaurant.DataAccess.Migrations
                 table: "orders",
                 type: "datetime2",
                 nullable: true,
-                defaultValue: new DateTime(2024, 12, 13, 23, 20, 36, 885, DateTimeKind.Local).AddTicks(7088),
+                defaultValue: new DateTime(2024, 12, 15, 14, 50, 45, 303, DateTimeKind.Local).AddTicks(930),
                 oldClrType: typeof(DateTime),
                 oldType: "datetime2",
                 oldNullable: true,
-                oldDefaultValue: new DateTime(2024, 12, 11, 22, 43, 1, 39, DateTimeKind.Local).AddTicks(3941));
+                oldDefaultValue: new DateTime(2024, 12, 13, 23, 20, 36, 885, DateTimeKind.Local).AddTicks(7088));
         }
 
         /// <inheritdoc />
@@ -30,11 +30,11 @@ namespace Restaurant.DataAccess.Migrations
                 table: "orders",
                 type: "datetime2",
                 nullable: true,
-                defaultValue: new DateTime(2024, 12, 11, 22, 43, 1, 39, DateTimeKind.Local).AddTicks(3941),
+                defaultValue: new DateTime(2024, 12, 13, 23, 20, 36, 885, DateTimeKind.Local).AddTicks(7088),
                 oldClrType: typeof(DateTime),
                 oldType: "datetime2",
                 oldNullable: true,
-                oldDefaultValue: new DateTime(2024, 12, 13, 23, 20, 36, 885, DateTimeKind.Local).AddTicks(7088));
+                oldDefaultValue: new DateTime(2024, 12, 15, 14, 50, 45, 303, DateTimeKind.Local).AddTicks(930));
         }
     }
 }

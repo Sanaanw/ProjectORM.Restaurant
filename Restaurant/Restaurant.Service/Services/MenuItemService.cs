@@ -26,7 +26,6 @@ namespace Restaurant.Service.Services
             await _Menucontext.menuItems.AddAsync(_menuItem);
             await _Menucontext.SaveChangesAsync();
         }
-
         public List<MenuItem> GetAllItems()
         {
             return _Menucontext.menuItems.ToList();

@@ -1,10 +1,5 @@
 ﻿using Restaurant.App.Controllers;
 using Restaurant.Service.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Restaurant.App.ManageRestoran
 {
@@ -54,11 +49,12 @@ namespace Restaurant.App.ManageRestoran
                             throw new NotAppropriateValueException("Pls add number of ID");
                         Console.Write("Add new item name: ");
                         string editedName2 = Console.ReadLine();
-                        Console.WriteLine($"Add price of edited item");
+                        Console.Write($"Add price of edited item: ");
                         var inputPrice2 = Console.ReadLine();
                         if (!int.TryParse(inputPrice2, out int itemPrice2))
                             throw new NotAppropriateValueException("Pls add value of price");
                         Console.Write("Add category of edited item: ");
+                        Console.WriteLine("Updating menu item");
                         string categoryEditedItem2 = Console.ReadLine();
                         menuItemController.EditMenuItem(editedMenuId2, new() { Name = editedName2, Price = itemPrice2, Category = categoryEditedItem2 });
                         Thread.Sleep(2000);

@@ -8,11 +8,9 @@ namespace Restaurant.Service.Services
 {
     public class OrderService
     {
-        private readonly RestaurantContext _Ordercontext;
-        public OrderService()
-        {
-            _Ordercontext = new RestaurantContext();
-        }
+        private readonly MenuItemService _menuItemService = new MenuItemService();
+        private readonly RestaurantContext _Ordercontext = new RestaurantContext();
+        private readonly RestaurantContext _orderItemcontext= new RestaurantContext();
         public void UpdateOrder(int id, Order order)
         {
             var ExistOrder = GetOrderWithNoForOrderItem(id);
@@ -31,12 +29,86 @@ namespace Restaurant.Service.Services
             ExistOrder.Date = ExistOrder.Date ?? ExistOrder.Date;
             await _Ordercontext.SaveChangesAsync();
         }
-        public void CreateOrder(Order order)
+        public void CreateOrder()
         {
-            if (_Ordercontext.orders.Any(x => x.Id == order.Id))
-                throw new AlreadyExistsException($"The order with {order.Id} ID is already exist");
+            bool MainLoop = true;
+            Order order = new Order();
             _Ordercontext.orders.Add(order);
             _Ordercontext.SaveChanges();
+            Console.WriteLine($"Created order with {order.Id}");
+            Console.Clear();
+
+            do
+            {
+                Console.Write("Do you wanna to add Order Item YES/NO: ");
+                string Answer = Console.ReadLine()?.Trim().ToUpper();
+
+                if (Answer == "YES")
+                {
+                    bool ResultForMenuId = true;
+                    bool ResultForItemCount = true;
+                    int _MenuItemId = default;
+                    int _CountItem = default;
+                    Console.Clear();
+                    while (ResultForMenuId)
+                    {
+                        foreach (var item in _menuItemService.GetAllItems())
+                        {
+                            Console.WriteLine(item);
+                        }
+                        Console.Write("Add ID of Menu item that you wanna add: ");
+                        var inputMenuItemId = Console.ReadLine();
+
+                        if (!int.TryParse(inputMenuItemId, out _MenuItemId))
+                            Console.WriteLine("Pls add value of ID");
+                        else
+                            ResultForMenuId = false;
+                    }
+                    while (ResultForItemCount)
+                    {
+                        Console.Write("Add count of Menu item: ");
+                        var inputCountItem = Console.ReadLine();
+
+                        if (!int.TryParse(inputCountItem, out _CountItem))
+                            Console.WriteLine("Pls add Count");
+                        else
+                            ResultForItemCount = false;
+                    }
+
+                    OrderItem orderItem = new()
+                    {
+                        MenuItemID = _MenuItemId,
+                        Count = _CountItem,
+                        OrderID = order.Id
+                    };
+                    MenuItem _menuItem = _menuItemService.GetById(_MenuItemId);
+                    double _itemPrice = (double)_menuItem.Price;
+
+                    if (order.TotalAmount is null)
+                    {
+                        order.TotalAmount = 0;
+                    }
+                    order.TotalAmount += _itemPrice * orderItem.Count;
+
+                    UpdateOrder(orderItem.OrderID, new() { TotalAmount = order.TotalAmount });
+                    _orderItemcontext.orderItems.Add(orderItem);
+                    _orderItemcontext.SaveChanges();
+                    Console.WriteLine("Added Order");
+                }
+                else if (Answer == "NO")
+                {
+                    Console.WriteLine("Orders:");
+                    foreach (var item in _orderItemcontext.orderItems.Where(x => x.OrderID == order.Id).ToList())
+                    {
+                        Console.WriteLine(item);
+                    }
+                    MainLoop = false;
+                }
+                else
+                {
+                    Console.WriteLine("Answer could be YES or NO");
+                }
+            } while (MainLoop);
         }
         public async Task CreateOrderAsync(Order order)
         {
