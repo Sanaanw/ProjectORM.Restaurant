@@ -30,6 +30,20 @@ namespace Restaurant.Service.Services
             _orderItemcontext.orderItems.Add(orderItem);
             _orderItemcontext.SaveChanges();
         }
+        public async Task AddOrderItemAsync(OrderItem orderItem)
+        {
+            if (!(await _orderItemcontext.orders.AnyAsync(x => x.Id == orderItem.OrderID)))
+                throw new NotFoundException($"The order that with {orderItem.OrderID} ID doesn't exist");
+            MenuItem _menuItem = _menuItemService.GetById(orderItem.MenuItemID);
+            double _itemPrice = (double)_menuItem.Price;
+            Order _order = _orderService.GetOrderWithNoForOrderItem(orderItem.OrderID);
+            if (_order.TotalAmount is null)
+                _order.TotalAmount = 0;
+            _order.TotalAmount += _itemPrice * orderItem.Count;
+            _orderService.UpdateOrder(orderItem.OrderID, new() { TotalAmount = _order.TotalAmount });
+            await _orderItemcontext.orderItems.AddAsync(orderItem);
+            await _orderItemcontext.SaveChangesAsync();
+        }
         public void DeleteOrderItem(int orderID)
         {
             var NewOrderItem = _orderItemcontext.orderItems.SingleOrDefault(x => x.Id == orderID);
@@ -37,6 +51,14 @@ namespace Restaurant.Service.Services
                 throw new NotFoundException($"Not found OrderItem with {orderID} ID");
             _orderItemcontext.orderItems.Remove(NewOrderItem);
             _orderItemcontext.SaveChanges();
+        }
+        public async Task DeleteOrderItemAsync(int orderID)
+        {
+            var NewOrderItem = await _orderItemcontext.orderItems.SingleOrDefaultAsync(x => x.Id == orderID);
+            if (NewOrderItem is null)
+                throw new NotFoundException($"Not found OrderItem with {orderID} ID");
+            _orderItemcontext.orderItems.Remove(NewOrderItem);
+           await _orderItemcontext.SaveChangesAsync();
         }
     }
 }

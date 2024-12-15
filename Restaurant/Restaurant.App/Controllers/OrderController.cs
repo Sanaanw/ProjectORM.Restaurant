@@ -19,7 +19,6 @@ namespace Restaurant.App.Controllers
         {
             _orderService.GetAllOrders();
         }
-
         public void CreateOrder(Order order)
         {
             _orderService.CreateOrder(order);
@@ -34,11 +33,11 @@ namespace Restaurant.App.Controllers
         }
         public void ShowOrderByAmountRange(double _minPrice, double _maxPrice)
         {
-             _orderService.GetOrderWithPriceInterval(_minPrice,_maxPrice);
+            _orderService.GetOrderWithPriceInterval(_minPrice, _maxPrice);
         }
         public void GetOrderByNo(int _id)
         {
-          _orderService.GetOrderWithNo(_id);
+            _orderService.GetOrderWithNo(_id);
         }
     }
 }

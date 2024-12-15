@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Restaurant.App.Controllers
@@ -38,7 +39,7 @@ namespace Restaurant.App.Controllers
         {
             return _menuItemService.GetItemByCategory(_category);
         }
-        public List<MenuItem> MenuItemsByPriceInterval(int _minPrice,int _maxPrice)
+        public List<MenuItem> MenuItemsByPriceInterval(int _minPrice, int _maxPrice)
         {
             return _menuItemService.GetItemByPriceInterval(_minPrice, _maxPrice);
         }
