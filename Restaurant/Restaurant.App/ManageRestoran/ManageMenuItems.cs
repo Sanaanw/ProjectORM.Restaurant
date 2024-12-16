@@ -38,8 +38,9 @@ namespace Restaurant.App.ManageRestoran
                             throw new NotAppropriateValueException("Pls add value of price");
                         Console.Write("Add category of Menu item: ");
                         string categoryMenuItem = Console.ReadLine();
+                        Console.WriteLine("Creating menu item...");
                         menuItemController.AddMenuItem(new() { Name = itemName1, Price = itemPrice1, Category = categoryMenuItem });
-                        Thread.Sleep(2000);
+                        Console.ReadLine();
                         break;
                     case 2:
                         Console.Clear();
@@ -54,10 +55,10 @@ namespace Restaurant.App.ManageRestoran
                         if (!int.TryParse(inputPrice2, out int itemPrice2))
                             throw new NotAppropriateValueException("Pls add value of price");
                         Console.Write("Add category of edited item: ");
-                        Console.WriteLine("Updating menu item");
                         string categoryEditedItem2 = Console.ReadLine();
+                        Console.WriteLine("Updating menu item...");
                         menuItemController.EditMenuItem(editedMenuId2, new() { Name = editedName2, Price = itemPrice2, Category = categoryEditedItem2 });
-                        Thread.Sleep(2000);
+                        Console.ReadLine();
                         break;
                     case 3:
                         Console.Clear();
@@ -65,28 +66,30 @@ namespace Restaurant.App.ManageRestoran
                         var RemovedItemID3 = Console.ReadLine();
                         if (!int.TryParse(RemovedItemID3, out int RemovedMenuItemID3))
                             throw new NotAppropriateValueException("Pls add number of ID");
+                        Console.WriteLine("Removing menu iTem...");
                         menuItemController.RemoveMenuItem(RemovedMenuItemID3);
-                        Thread.Sleep(2000);
+                        Console.ReadLine();
                         break;
                     case 4:
                         Console.Clear();
+                        Console.WriteLine("Menu iTems:");
                         foreach (var item in menuItemController.MenuItems())
                         {
                             Console.WriteLine(item);
                         }
-                        Thread.Sleep(3000);
+                        Console.ReadLine();
                         break;
                     case 5:
                         Console.Clear();
                         Console.Write("Enter category of MenuItems: ");
-                        string CategoryOfItems5=Console.ReadLine();
-                        Console.Clear();
+                        string CategoryOfItems5 = Console.ReadLine();
+                        Console.WriteLine();
                         Console.WriteLine("Menu Items: ");
                         foreach (var item in menuItemController.MenuItemsByCategory(CategoryOfItems5))
                         {
                             Console.WriteLine(item);
                         }
-                        Thread.Sleep(3000);
+                        Console.ReadLine();
                         break;
                     case 6:
                         Console.Clear();
@@ -98,32 +101,33 @@ namespace Restaurant.App.ManageRestoran
                         var inputMaxPrice6 = Console.ReadLine();
                         if (!int.TryParse(inputMaxPrice6, out int MaxPrice6))
                             throw new NotAppropriateValueException("Pls add value of price");
-                        Console.Clear();
+                        Console.WriteLine();
                         Console.WriteLine("Menu Items:");
                         foreach (var item in menuItemController.MenuItemsByPriceInterval(MinPrice6, MaxPrice6))
                         {
                             Console.WriteLine(item);
                         }
-                        Thread.Sleep(3000);
+                        Console.ReadLine();
                         break;
                     case 7:
                         Console.Clear();
                         Console.Write("Search Menu Item: ");
-                        string Searching7=Console.ReadLine();
+                        string Searching7 = Console.ReadLine();
+                        Console.WriteLine("Menu Items:");
                         foreach (var item in menuItemController.SearchMenuItems(Searching7))
                         {
                             Console.WriteLine(item);
                         }
-                        Thread.Sleep(3000);
+                        Console.ReadLine();
                         break;
                     case 0:
                         Console.WriteLine("Returning to the previous menu");
-                        Thread.Sleep(1000);
                         MenuResult = false;
+                        Console.ReadLine();
                         break;
                     default:
                         Console.WriteLine("Pls Add appropriate command");
-                        Thread.Sleep(1000);
+                        Console.ReadLine();
                         break;
                 }
             } while (MenuResult);

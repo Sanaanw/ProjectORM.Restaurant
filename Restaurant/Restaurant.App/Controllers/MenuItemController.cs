@@ -13,17 +13,35 @@ namespace Restaurant.App.Controllers
         public void AddMenuItem(MenuItem _menuItem)
         {
             _menuItemService.CreateMenuItem(_menuItem);
-            Console.WriteLine($"{_menuItem} added to Menu");
+            Console.WriteLine($"{_menuItem} added to Menu.");
+            Console.WriteLine( );
+            Console.WriteLine("Menu items:");
+            foreach (var item in MenuItems())
+            {
+                Console.WriteLine(item);
+            }
         }
         public void EditMenuItem(int _id, MenuItem _menuItem)
         {
             _menuItemService.EditMenuItem(_id, _menuItem);
-            Console.WriteLine($"Edited MenuItem with {_id} ID");
+            Console.WriteLine( );
+            Console.WriteLine($"Edited MenuItem with {_id} ID.");
+            Console.WriteLine("Menu items:");
+            foreach (var item in MenuItems())
+            {
+                Console.WriteLine(item);
+            }
         }
         public void RemoveMenuItem(int _id)
         {
             _menuItemService.DeleteById(_id);
-            Console.WriteLine($"Removed item with {_id} ID");
+            Console.WriteLine( );
+            Console.WriteLine($"Removed item with {_id} ID.");
+            Console.WriteLine("Menu items:");
+            foreach (var item in MenuItems())
+            {
+                Console.WriteLine(item);
+            }
         }
         public List<MenuItem> MenuItems()
         {

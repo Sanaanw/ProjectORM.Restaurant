@@ -10,13 +10,18 @@ namespace Restaurant.App.Controllers
         {
             _orderService = new OrderService();
         }
+        public void CreateOrder()
+        {
+            _orderService.CreateOrder();
+        }
+        public void RemoveOrder(int _id)
+        {
+            _orderService.DeleteOrder(_id);
+            Console.WriteLine($"Deleted order with {_id} ID");
+        }
         public void ShowAllOrders()
         {
             _orderService.GetAllOrders();
-        }
-        public void CreateOrder()
-        {
-           _orderService.CreateOrder();
         }
         public void GetOrderByDateInterval(DateTime _startDate, DateTime _endDate)
         {
@@ -24,7 +29,7 @@ namespace Restaurant.App.Controllers
         }
         public void ShowOrdersForGivenDate(DateTime _date)
         {
-            _orderService.GetOrderWithDate(_date);
+            _orderService.GetOrdersWithDate(_date);
         }
         public void ShowOrderByAmountRange(double _minPrice, double _maxPrice)
         {

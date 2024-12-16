@@ -10,7 +10,7 @@ namespace Restaurant.Service.Services
     {
         private readonly MenuItemService _menuItemService = new MenuItemService();
         private readonly RestaurantContext _Ordercontext = new RestaurantContext();
-        private readonly RestaurantContext _orderItemcontext= new RestaurantContext();
+        private readonly RestaurantContext _orderItemcontext = new RestaurantContext();
         public void UpdateOrder(int id, Order order)
         {
             var ExistOrder = GetOrderWithNoForOrderItem(id);
@@ -19,6 +19,10 @@ namespace Restaurant.Service.Services
             ExistOrder.TotalAmount = order.TotalAmount ?? order.TotalAmount;
             ExistOrder.Date = ExistOrder.Date ?? ExistOrder.Date;
             _Ordercontext.SaveChanges();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Updated order: ");
+            Console.ResetColor();
+            Console.WriteLine(GetOrderWithNoForOrderItem(id));
         }
         public async Task UpdateOrderAsync(int id, Order order)
         {
@@ -35,14 +39,14 @@ namespace Restaurant.Service.Services
             Order order = new Order();
             _Ordercontext.orders.Add(order);
             _Ordercontext.SaveChanges();
-            Console.WriteLine($"Created order with {order.Id}");
-            Console.Clear();
-
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"Created order with {order.Id} ID");
+            Console.WriteLine( );
             do
             {
+                Console.ResetColor();
                 Console.Write("Do you wanna to add Order Item YES/NO: ");
                 string Answer = Console.ReadLine()?.Trim().ToUpper();
-
                 if (Answer == "YES")
                 {
                     bool ResultForMenuId = true;
@@ -52,6 +56,9 @@ namespace Restaurant.Service.Services
                     Console.Clear();
                     while (ResultForMenuId)
                     {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.WriteLine("Menu Items: ");
+                        Console.ResetColor ();
                         foreach (var item in _menuItemService.GetAllItems())
                         {
                             Console.WriteLine(item);
@@ -74,7 +81,6 @@ namespace Restaurant.Service.Services
                         else
                             ResultForItemCount = false;
                     }
-
                     OrderItem orderItem = new()
                     {
                         MenuItemID = _MenuItemId,
@@ -97,7 +103,9 @@ namespace Restaurant.Service.Services
                 }
                 else if (Answer == "NO")
                 {
-                    Console.WriteLine("Orders:");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Orders: ");
+                    Console.ResetColor();
                     foreach (var item in _orderItemcontext.orderItems.Where(x => x.OrderID == order.Id).ToList())
                     {
                         Console.WriteLine(item);
@@ -110,18 +118,19 @@ namespace Restaurant.Service.Services
                 }
             } while (MainLoop);
         }
-        public async Task CreateOrderAsync(Order order)
+        public void DeleteOrder(int id)
         {
-            if (await _Ordercontext.orders.AnyAsync(x => x.Id == order.Id))
-                throw new AlreadyExistsException($"The order with {order.Id} ID is already exist");
-            await _Ordercontext.orders.AddAsync(order);
-            await _Ordercontext.SaveChangesAsync();
+            Order existingOrder = _Ordercontext.orders.SingleOrDefault(x => x.Id == id);
+            if (existingOrder == null)
+                throw new NotFoundException($"Not found order with {id} ID");
+            _Ordercontext.orders.Remove(existingOrder);
+            _Ordercontext.SaveChanges();
         }
         public void GetOrderWithDateInterval(DateTime startDate, DateTime endDate)
         {
             if (startDate > endDate)
                 throw new WrongIntervalException("StartingDate can't be greater that EndingDate");
-            var Orders = _Ordercontext.orders.Include(x => x.orderItems).Where(a => a.Date >= startDate && a.Date <= endDate)
+            var Orders = _Ordercontext.orders.Include(x => x.orderItems).Where(a => a.Date > startDate && a.Date < endDate)
            .Select(o => new
            {
                OrderId = o.Id,
@@ -131,9 +140,12 @@ namespace Restaurant.Service.Services
            }).ToList();
             if (Orders.Count == 0)
                 throw new NotFoundException("Not found Order in this interval");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Orders: ");
+            Console.ResetColor();
             foreach (var item in Orders)
             {
-                Console.WriteLine($"ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
+                Console.WriteLine($" - ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
             }
         }
         public async Task GetOrderWithDateIntervalAsync(DateTime startDate, DateTime endDate)
@@ -155,7 +167,7 @@ namespace Restaurant.Service.Services
                 Console.WriteLine($"ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
             }
         }
-        public void GetOrderWithDate(DateTime date)
+        public void GetOrdersWithDate(DateTime date)
         {
             var Orders = _Ordercontext.orders.Include(x => x.orderItems).Where(a => a.Date == date)
            .Select(o => new
@@ -167,9 +179,12 @@ namespace Restaurant.Service.Services
            }).ToList();
             if (Orders.Count == 0)
                 throw new NotFoundException("Not found Order in this Date");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Orders: ");
+            Console.ResetColor();
             foreach (var item in Orders)
             {
-                Console.WriteLine($"ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
+                Console.WriteLine($" - ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
             }
         }
         public async Task GetOrderWithDateAsync(DateTime date)
@@ -193,7 +208,7 @@ namespace Restaurant.Service.Services
         {
             if (minPrice > maxPrice)
                 throw new ArgumentException("Min price can't be greater than max price");
-            var Orders = _Ordercontext.orders.Include(x => x.orderItems).Where(x => x.TotalAmount >= minPrice && x.TotalAmount <= maxPrice)
+            var Orders = _Ordercontext.orders.Include(x => x.orderItems).Where(x => x.TotalAmount > minPrice && x.TotalAmount < maxPrice)
             .Select(o => new
             {
                 OrderId = o.Id,
@@ -203,9 +218,12 @@ namespace Restaurant.Service.Services
             }).ToList();
             if (Orders.Count == 0)
                 throw new NotFoundException("Not found Order in this interval");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Orders: ");
+            Console.ResetColor();
             foreach (var item in Orders)
             {
-                Console.WriteLine($"ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
+                Console.WriteLine($" - ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
             }
 
         }
@@ -268,7 +286,9 @@ namespace Restaurant.Service.Services
             Console.WriteLine($"Total Amount: {order.TotalAmount}");
             Console.WriteLine($"Total Menu Items: {order.TotalMenuItems}");
             Console.WriteLine($"Order Date: {order.OrderDate}");
-            Console.WriteLine("Order Items:");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Order Item:");
+            Console.ResetColor();
             foreach (var item in order.OrderItems)
             {
                 Console.WriteLine($" - Item ID: {item.ItemId}, Name: {item.ItemName}, {item.ItemCount} ");
@@ -317,9 +337,12 @@ namespace Restaurant.Service.Services
              }).ToList();
             if (Orders.Count() == 0)
                 throw new ArgumentNullException("Do not found Order");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Orders: ");
+            Console.ResetColor();
             foreach (var item in Orders)
             {
-                Console.WriteLine($"ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
+                Console.WriteLine($" - ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
             }
         }
         public async Task GetAllOrdersAsync()
@@ -336,7 +359,7 @@ namespace Restaurant.Service.Services
                 throw new ArgumentNullException("Do not found Order");
             foreach (var item in Orders)
             {
-                Console.WriteLine($"ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
+                Console.WriteLine($" - ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");
             }
         }
 
