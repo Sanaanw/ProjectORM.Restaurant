@@ -14,8 +14,10 @@ namespace Restaurant.App.Controllers
         {
             _menuItemService.CreateMenuItem(_menuItem);
             Console.WriteLine($"{_menuItem} added to Menu.");
+            Console.ForegroundColor= ConsoleColor.Green;
             Console.WriteLine( );
             Console.WriteLine("Menu items:");
+            Console.ResetColor();
             foreach (var item in MenuItems())
             {
                 Console.WriteLine(item);
@@ -26,7 +28,10 @@ namespace Restaurant.App.Controllers
             _menuItemService.EditMenuItem(_id, _menuItem);
             Console.WriteLine( );
             Console.WriteLine($"Edited MenuItem with {_id} ID.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine();
             Console.WriteLine("Menu items:");
+            Console.ResetColor();
             foreach (var item in MenuItems())
             {
                 Console.WriteLine(item);
@@ -37,7 +42,10 @@ namespace Restaurant.App.Controllers
             _menuItemService.DeleteById(_id);
             Console.WriteLine( );
             Console.WriteLine($"Removed item with {_id} ID.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine();
             Console.WriteLine("Menu items:");
+            Console.ResetColor();
             foreach (var item in MenuItems())
             {
                 Console.WriteLine(item);

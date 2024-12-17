@@ -16,7 +16,7 @@ namespace Restaurant.App.ManageRestoran
                 Console.WriteLine("Order Operations: ");
                 Console.ResetColor();
                 Console.WriteLine("1. Add a order");
-                Console.WriteLine("2. Cancel an order");
+                Console.WriteLine("2. Remove an order");
                 Console.WriteLine("3. Show all orders");
                 Console.WriteLine("4. Show orders by date range");
                 Console.WriteLine("5. Show orders by amount range");

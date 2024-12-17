@@ -72,7 +72,10 @@ namespace Restaurant.App.ManageRestoran
                         break;
                     case 4:
                         Console.Clear();
-                        Console.WriteLine("Menu iTems:");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine();
+                        Console.WriteLine("Menu items:");
+                        Console.ResetColor();
                         foreach (var item in menuItemController.MenuItems())
                         {
                             Console.WriteLine(item);
@@ -83,8 +86,10 @@ namespace Restaurant.App.ManageRestoran
                         Console.Clear();
                         Console.Write("Enter category of MenuItems: ");
                         string CategoryOfItems5 = Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine();
-                        Console.WriteLine("Menu Items: ");
+                        Console.WriteLine("Menu items:");
+                        Console.ResetColor();
                         foreach (var item in menuItemController.MenuItemsByCategory(CategoryOfItems5))
                         {
                             Console.WriteLine(item);
@@ -101,8 +106,10 @@ namespace Restaurant.App.ManageRestoran
                         var inputMaxPrice6 = Console.ReadLine();
                         if (!int.TryParse(inputMaxPrice6, out int MaxPrice6))
                             throw new NotAppropriateValueException("Pls add value of price");
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine();
-                        Console.WriteLine("Menu Items:");
+                        Console.WriteLine("Menu items:");
+                        Console.ResetColor();
                         foreach (var item in menuItemController.MenuItemsByPriceInterval(MinPrice6, MaxPrice6))
                         {
                             Console.WriteLine(item);
@@ -113,7 +120,10 @@ namespace Restaurant.App.ManageRestoran
                         Console.Clear();
                         Console.Write("Search Menu Item: ");
                         string Searching7 = Console.ReadLine();
-                        Console.WriteLine("Menu Items:");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine();
+                        Console.WriteLine("Menu items:");
+                        Console.ResetColor();
                         foreach (var item in menuItemController.SearchMenuItems(Searching7))
                         {
                             Console.WriteLine(item);
@@ -121,7 +131,7 @@ namespace Restaurant.App.ManageRestoran
                         Console.ReadLine();
                         break;
                     case 0:
-                        Console.WriteLine("Returning to the previous menu");
+                        Console.WriteLine("Returning to the previous menu...");
                         MenuResult = false;
                         Console.ReadLine();
                         break;

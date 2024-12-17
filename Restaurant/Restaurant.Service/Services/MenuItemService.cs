@@ -2,10 +2,11 @@
 using Restaurant.Core.Entities;
 using Restaurant.DataAccess.Data;
 using Restaurant.Service.Exceptions;
+using Restaurant.Service.Interfaces;
 
 namespace Restaurant.Service.Services
 {
-    public class MenuItemService
+    public class MenuItemService : IMenuItemService
     {
         private readonly RestaurantContext _Menucontext;
         public MenuItemService()

@@ -2,11 +2,12 @@
 using Restaurant.Core.Entities;
 using Restaurant.DataAccess.Data;
 using Restaurant.Service.Exceptions;
+using Restaurant.Service.Interfaces;
 using System.Linq;
 
 namespace Restaurant.Service.Services
 {
-    public class OrderService
+    public class OrderService : IOrderService
     {
         private readonly MenuItemService _menuItemService = new MenuItemService();
         private readonly RestaurantContext _Ordercontext = new RestaurantContext();
@@ -41,7 +42,7 @@ namespace Restaurant.Service.Services
             _Ordercontext.SaveChanges();
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"Created order with {order.Id} ID");
-            Console.WriteLine( );
+            Console.WriteLine();
             do
             {
                 Console.ResetColor();
@@ -58,7 +59,7 @@ namespace Restaurant.Service.Services
                     {
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine("Menu Items: ");
-                        Console.ResetColor ();
+                        Console.ResetColor();
                         foreach (var item in _menuItemService.GetAllItems())
                         {
                             Console.WriteLine(item);

@@ -9,7 +9,7 @@
         public Order order { get; set; }
         public override string ToString()
         {
-            return $"ID:{Id}, MenuItemID:{MenuItemID}, OrderID: {OrderID}";
+            return $" - ID:{Id}, MenuItemID:{MenuItemID}, OrderID: {OrderID}";
         }
     }   
 }
