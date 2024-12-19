@@ -13,7 +13,9 @@ namespace Restaurant.App.ManageRestoran
             do
             {
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Menu Items Operations:");
+                Console.ResetColor();
                 Console.WriteLine("1. Add new item");
                 Console.WriteLine("2. Update an item");
                 Console.WriteLine("3. Remove item");
@@ -22,7 +24,10 @@ namespace Restaurant.App.ManageRestoran
                 Console.WriteLine("6. Show items by price range");
                 Console.WriteLine("7. Search items by name");
                 Console.WriteLine("0. Return to the previous menu");
+                Console.WriteLine( );
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("Enter your choice: ");
+                Console.ResetColor();
                 var inputMenu = Console.ReadLine();
                 if (!int.TryParse(inputMenu, out int menuAnswer))
                     menuAnswer = 100;
@@ -131,14 +136,15 @@ namespace Restaurant.App.ManageRestoran
                         Console.ReadLine();
                         break;
                     case 0:
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("Returning to the previous menu...");
+                        Console.ResetColor();
                         MenuResult = false;
-                        Console.ReadLine();
+                        Thread.Sleep(1000);
                         break;
                     default:
-                        Console.WriteLine("Pls Add appropriate command");
-                        Console.ReadLine();
-                        break;
+                        throw new NotAppropriateValueException("Add Appropraite value");
                 }
             } while (MenuResult);
         }

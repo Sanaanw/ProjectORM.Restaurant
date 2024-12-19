@@ -1,6 +1,6 @@
 ﻿using Restaurant.App.Controllers;
 using Restaurant.App.ManageRestoran;
-using Restaurant.Service.Services;
+using Restaurant.Service.Exceptions;
 
 namespace Restaurant.App
 {
@@ -54,16 +54,13 @@ namespace Restaurant.App
                                 result = false;
                                 break;
                             default:
-                                Console.ForegroundColor = ConsoleColor.Yellow;
-                                Console.WriteLine("Pls Add appropriate command");
-                                Console.ResetColor();
-                                Thread.Sleep(2000);
-                                break;
+                                throw new NotAppropriateValueException("Add Appropraite value");
                         }
                     } while (result);
                 }
                 catch (Exception ex)
                 {
+                    Console.Clear();
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine($"Error: {ex.Message}");
                     Console.WriteLine();

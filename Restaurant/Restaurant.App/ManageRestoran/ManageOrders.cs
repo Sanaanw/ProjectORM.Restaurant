@@ -23,7 +23,7 @@ namespace Restaurant.App.ManageRestoran
                 Console.WriteLine("6. Show orders for given date");
                 Console.WriteLine("7. Show order details by order number");
                 Console.WriteLine("0. Return to the previous menu");
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine( );
                 Console.Write("Enter your choice: ");
                 Console.ResetColor();
@@ -102,15 +102,15 @@ namespace Restaurant.App.ManageRestoran
                         Console.ReadLine();
                         break;
                     case 0:
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("Returning to the previous menu");
+                        Console.ResetColor();   
                         Thread.Sleep(1000);
                         orderResult = false;
                         break;
                     default:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Pls Add appropriate command");
-                        Console.ResetColor();
-                        break;
+                        throw new NotAppropriateValueException("Add Appropraite value");
                 }
             } while (orderResult);
         }

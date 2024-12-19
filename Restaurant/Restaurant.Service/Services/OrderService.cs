@@ -3,7 +3,6 @@ using Restaurant.Core.Entities;
 using Restaurant.DataAccess.Data;
 using Restaurant.Service.Exceptions;
 using Restaurant.Service.Interfaces;
-using System.Linq;
 
 namespace Restaurant.Service.Services
 {
