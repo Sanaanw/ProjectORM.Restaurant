@@ -152,7 +152,7 @@ namespace Restaurant.Service.Services
         {
             if (startDate > endDate)
                 throw new WrongIntervalException("StartingDate can't be greater that EndingDate");
-            var Orders = await _Ordercontext.orders.Include(x => x.orderItems).Where(a => a.Date >= startDate && a.Date <= endDate)
+            var Orders = await _Ordercontext.orders.Include(x => x.orderItems).Where(a => a.Date > startDate && a.Date < endDate)
            .Select(o => new
            {
                OrderId = o.Id,
@@ -319,7 +319,9 @@ namespace Restaurant.Service.Services
             Console.WriteLine($"Total Amount: {order.TotalAmount}");
             Console.WriteLine($"Total Menu Items: {order.TotalMenuItems}");
             Console.WriteLine($"Order Date: {order.OrderDate}");
-            Console.WriteLine("Order Items:");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Orders: ");
+            Console.ResetColor();
             foreach (var item in order.OrderItems)
             {
                 Console.WriteLine($" - Item ID: {item.ItemId}, Name: {item.ItemName}, {item.ItemCount} ");
@@ -357,6 +359,9 @@ namespace Restaurant.Service.Services
              }).ToListAsync();
             if (Orders.Count() == 0)
                 throw new ArgumentNullException("Do not found Order");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Orders: ");
+            Console.ResetColor();
             foreach (var item in Orders)
             {
                 Console.WriteLine($" - ID:{item.OrderId}, Total Amount:{item.TotalAmount}, Total Items:{item.TotalMenuItems}, Date:{item.OrderDate}");

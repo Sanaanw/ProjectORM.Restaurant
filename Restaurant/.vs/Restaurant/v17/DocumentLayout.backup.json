@@ -1,42 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM. Restaurant\\Restaurant\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE785905-8F52-4C66-8FA5-CE01F5C949E1}|Restaurant.Service\\Restaurant.Service.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.service\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE785905-8F52-4C66-8FA5-CE01F5C949E1}|Restaurant.Service\\Restaurant.Service.csproj|solutionrelative:restaurant.service\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE785905-8F52-4C66-8FA5-CE01F5C949E1}|Restaurant.Service\\Restaurant.Service.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.service\\services\\menuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE785905-8F52-4C66-8FA5-CE01F5C949E1}|Restaurant.Service\\Restaurant.Service.csproj|solutionrelative:restaurant.service\\services\\menuitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.dataaccess\\migrations\\restaurantcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|solutionrelative:restaurant.dataaccess\\migrations\\restaurantcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.dataaccess\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|solutionrelative:restaurant.dataaccess\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.dataaccess\\configurations\\menuitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|solutionrelative:restaurant.dataaccess\\configurations\\menuitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm. restaurant\\restaurant\\restaurant.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.app\\managerestoran\\manageorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\managerestoran\\manageorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.app\\managerestoran\\managemenuitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\managerestoran\\managemenuitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm.restaurant\\restaurant\\restaurant.app\\controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA28B987-2D3C-4DEB-9F46-E4AE3D7FD076}|Restaurant.App\\Restaurant.App.csproj|solutionrelative:restaurant.app\\controllers\\menuitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|c:\\users\\asus\\onedrive\\desktop\\projectorm. restaurant\\restaurant\\restaurant.dataaccess\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D22C2E2A-4377-4987-8214-C0B8E748CAF4}|Restaurant.DataAccess\\Restaurant.DataAccess.csproj|solutionrelative:restaurant.dataaccess\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,117 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RestaurantContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.DataAccess\\Migrations\\RestaurantContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Restaurant.DataAccess\\Migrations\\RestaurantContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.DataAccess\\Migrations\\RestaurantContextModelSnapshot.cs*",
-              "RelativeToolTip": "Restaurant.DataAccess\\Migrations\\RestaurantContextModelSnapshot.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:09:57.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManageOrders.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "RelativeDocumentMoniker": "Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "RelativeToolTip": "Restaurant.App\\ManageRestoran\\ManageOrders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T11:50:51.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuItemConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.DataAccess\\Configurations\\MenuItemConfiguration.cs",
-              "RelativeDocumentMoniker": "Restaurant.DataAccess\\Configurations\\MenuItemConfiguration.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.DataAccess\\Configurations\\MenuItemConfiguration.cs",
-              "RelativeToolTip": "Restaurant.DataAccess\\Configurations\\MenuItemConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:27:31.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM. Restaurant\\Restaurant\\Restaurant.App\\Program.cs",
               "RelativeDocumentMoniker": "Restaurant.App\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\Program.cs*",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM. Restaurant\\Restaurant\\Restaurant.App\\Program.cs*",
               "RelativeToolTip": "Restaurant.App\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:45:42.995Z",
+              "WhenOpened": "2024-12-20T10:22:55.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuItemService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Service\\Services\\MenuItemService.cs",
-              "RelativeDocumentMoniker": "Restaurant.Service\\Services\\MenuItemService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Service\\Services\\MenuItemService.cs",
-              "RelativeToolTip": "Restaurant.Service\\Services\\MenuItemService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:03:42.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Service\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "Restaurant.Service\\Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.Service\\Services\\OrderService.cs*",
-              "RelativeToolTip": "Restaurant.Service\\Services\\OrderService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:26:05.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ManageMenuItems.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageMenuItems.cs",
-              "RelativeDocumentMoniker": "Restaurant.App\\ManageRestoran\\ManageMenuItems.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\ManageRestoran\\ManageMenuItems.cs",
-              "RelativeToolTip": "Restaurant.App\\ManageRestoran\\ManageMenuItems.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:03:27.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MenuItemController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\Controllers\\MenuItemController.cs",
-              "RelativeDocumentMoniker": "Restaurant.App\\Controllers\\MenuItemController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.App\\Controllers\\MenuItemController.cs",
-              "RelativeToolTip": "Restaurant.App\\Controllers\\MenuItemController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T06:03:38.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "OrderConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.DataAccess\\Configurations\\OrderConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM. Restaurant\\Restaurant\\Restaurant.DataAccess\\Configurations\\OrderConfiguration.cs",
               "RelativeDocumentMoniker": "Restaurant.DataAccess\\Configurations\\OrderConfiguration.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM.Restaurant\\Restaurant\\Restaurant.DataAccess\\Configurations\\OrderConfiguration.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ProjectORM. Restaurant\\Restaurant\\Restaurant.DataAccess\\Configurations\\OrderConfiguration.cs",
               "RelativeToolTip": "Restaurant.DataAccess\\Configurations\\OrderConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T06:27:41.102Z",
               "EditorCaption": ""

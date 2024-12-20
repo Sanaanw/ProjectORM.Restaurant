@@ -110,7 +110,7 @@ namespace Restaurant.App.ManageRestoran
                         orderResult = false;
                         break;
                     default:
-                        throw new NotAppropriateValueException("Add Appropraite value");
+                        throw new NotAppropriateValueException("Add Appropriate value");
                 }
             } while (orderResult);
         }

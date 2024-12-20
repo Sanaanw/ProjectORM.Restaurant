@@ -144,7 +144,7 @@ namespace Restaurant.App.ManageRestoran
                         Thread.Sleep(1000);
                         break;
                     default:
-                        throw new NotAppropriateValueException("Add Appropraite value");
+                        throw new NotAppropriateValueException("Add Appropriate value");
                 }
             } while (MenuResult);
         }

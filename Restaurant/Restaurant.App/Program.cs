@@ -45,16 +45,20 @@ namespace Restaurant.App
                                 manageOrders.ManageOrder();
                                 break;
                             case 0:
+                                Console.Clear();
+                                Console.ForegroundColor = ConsoleColor.Yellow;
                                 Console.WriteLine("Existing menu...");
+                                Console.ResetColor();
                                 Thread.Sleep(1000);
                                 Console.Clear();
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("Program ended");
                                 Console.ResetColor();
                                 result = false;
+                                MainLoop = false;
                                 break;
                             default:
-                                throw new NotAppropriateValueException("Add Appropraite value");
+                                throw new NotAppropriateValueException("Add Appropriate value");
                         }
                     } while (result);
                 }

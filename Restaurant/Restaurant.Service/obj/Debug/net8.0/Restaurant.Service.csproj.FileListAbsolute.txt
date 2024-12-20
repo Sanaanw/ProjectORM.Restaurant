@@ -57,3 +57,23 @@ C:\Users\ASUS\OneDrive\Desktop\ProjectORM.Restaurant\Restaurant\Restaurant.Servi
 C:\Users\ASUS\OneDrive\Desktop\ProjectORM.Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.pdb
 C:\Users\ASUS\OneDrive\Desktop\ProjectORM.Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.genruntimeconfig.cache
 C:\Users\ASUS\OneDrive\Desktop\ProjectORM.Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\ref\Restaurant.Service.dll
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.Service.deps.json
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.Service.runtimeconfig.json
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.Service.dll
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.Service.pdb
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.Core.dll
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.DataAccess.dll
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.DataAccess.pdb
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\bin\Debug\net8.0\Restaurant.Core.pdb
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.sourcelink.json
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaura.AD9DA790.Up2Date
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.dll
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\refint\Restaurant.Service.dll
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.pdb
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\Restaurant.Service.genruntimeconfig.cache
+C:\Users\ASUS\OneDrive\Desktop\ProjectORM. Restaurant\Restaurant\Restaurant.Service\obj\Debug\net8.0\ref\Restaurant.Service.dll
